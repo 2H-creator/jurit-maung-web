@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jurit Maung — Survival & Healing Ecosystem untuk Komuter Urban</title>
+  <meta name="description" content="IP Creative Brand & Dual-Utility Merchandise (E-Money RFID & Inhaler Keychain) kolaborasi SBM ITB & FSRD ITB untuk generasi muda dan komuter urban Indonesia." />
+  <meta property="og:title" content="Jurit Maung — Survival & Healing Ecosystem" />
+  <meta property="og:description" content="Karakter komik satir komuter urban, E-Money RFID Keychain, Inhaler Holder, dan skema kolaborasi komunitas tanpa risiko modal." />
+  <meta property="og:image" content="./assets/4 karakter.png" />
+
+  <!-- Google Fonts: Archivo Black & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Archivo Black"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            maungOrange: '#FF5500',
+            maungBlue: '#1652F0',
+            maungCream: '#FFF8E7',
+            maungYellow: '#FFD600',
+            maungInk: '#111111',
+          },
+          boxShadow: {
+            brutal: '6px 6px 0px 0px #111111',
+            'brutal-lg': '10px 10px 0px 0px #111111',
+            'brutal-sm': '3px 3px 0px 0px #111111',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FFF8E7;
+      color: #111111;
+      background-image: radial-gradient(#111111 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .brutal-btn {
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .brutal-btn:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 8px 8px 0px 0px #111111;
+    }
+    .brutal-btn:active {
+      transform: translate(4px, 4px);
+      box-shadow: 2px 2px 0px 0px #111111;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: max-content;
+      animation: marquee 22s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(-1deg); }
+      50% { transform: translateY(-10px) rotate(1.5deg); }
+    }
+    .animate-float {
+      animation: floatSlow 4s ease-in-out infinite;
+    }
+    @keyframes pulseRing {
+      0% { transform: scale(0.8); opacity: 0.9; }
+      100% { transform: scale(2.1); opacity: 0; }
+    }
+    .nfc-ring {
+      animation: pulseRing 1.2s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden selection:bg-maungOrange selection:text-white">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-maungCream/95 backdrop-blur border-b-4 border-maungInk">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="./assets/Logo Jurit Maung'.png" alt="Logo Jurit Maung" class="h-12 w-auto object-contain transition-transform group-hover:scale-105" />
+        <div class="hidden sm:block">
+          <span class="font-display text-xl tracking-tight uppercase block leading-none">JURIT MAUNG</span>
+          <span class="text-xs font-extrabold uppercase tracking-widest text-maungOrange">Urban Survival IP</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 font-extrabold text-sm uppercase tracking-wide">
+        <a href="#squad" class="hover:text-maungOrange transition-colors">Squad</a>
+        <a href="#komik" class="hover:text-maungOrange transition-colors">Komik & IG</a>
+        <a href="#merch-lab" class="hover:text-maungOrange transition-colors">Merch Lab</a>
+        <a href="#kemitraan" class="hover:text-maungOrange transition-colors">Kemitraan</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#kemitraan" class="brutal-btn bg-maungOrange text-white font-display text-xs sm:text-sm uppercase px-4 py-2.5 border-4 border-maungInk shadow-brutal-sm rounded-xl">
+          Kolaborasi Yuk!
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section class="relative pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <!-- Kolom Kiri: Headline & CTA -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 bg-maungYellow border-4 border-maungInk px-4 py-1.5 rounded-full shadow-brutal-sm font-extrabold text-xs sm:text-sm uppercase">
+          <span>🐯</span>
+          <span>Survival & Healing Ecosystem • Bandung – Jabodetabek</span>
+        </div>
+
+        <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl uppercase leading-[0.95] tracking-tight text-maungInk">
+          TEMAN SETIA <span class="text-maungOrange underline decoration-4 underline-offset-4">DRAMA KOMUTER</span> & BURNOUT HARIAN.
+        </h1>
+
+        <p class="text-base sm:text-lg font-semibold text-neutral-800 max-w-2xl leading-relaxed bg-white/90 p-4 rounded-2xl border-4 border-maungInk shadow-brutal-sm">
+          Kami menerjemahkan keluh kesah antre KRL, macetnya jam pulang kantor, hingga kepala pening menjadi <strong>komik satir</strong> dan <strong>gantungan kunci fungsional (E-Money RFID & Inhaler Holder)</strong> berkarakter lokal.
+        </p>
+
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="#merch-lab" class="brutal-btn bg-maungBlue text-white font-display text-sm sm:text-base uppercase px-6 py-4 border-4 border-maungInk shadow-brutal rounded-2xl inline-flex items-center gap-2">
+            <span>⚡</span> Coba Simulator Tap-In
+          </a>
+          <a href="#squad" class="brutal-btn bg-white text-maungInk font-display text-sm sm:text-base uppercase px-6 py-4 border-4 border-maungInk shadow-brutal rounded-2xl inline-flex items-center gap-2">
+            <span>👀</span> Kenalan Sama Squad
+          </a>
+        </div>
+
+        <!-- Badge Validasi Singkat -->
+        <div class="grid grid-cols-3 gap-3 pt-4 max-w-xl">
+          <div class="bg-white border-4 border-maungInk rounded-xl p-3 shadow-brutal-sm text-center">
+            <div class="font-display text-xl sm:text-2xl text-maungOrange">91,1%</div>
+            <div class="text-[11px] sm:text-xs font-extrabold uppercase leading-tight">Relate Sama Narasi</div>
+          </div>
+          <div class="bg-white border-4 border-maungInk rounded-xl p-3 shadow-brutal-sm text-center">
+            <div class="font-display text-xl sm:text-2xl text-maungBlue">86,7%</div>
+            <div class="text-[11px] sm:text-xs font-extrabold uppercase leading-tight">Alami Burnout Harian</div>
+          </div>
+          <div class="bg-white border-4 border-maungInk rounded-xl p-3 shadow-brutal-sm text-center">
+            <div class="font-display text-xl sm:text-2xl text-maungInk">2-in-1</div>
+            <div class="text-[11px] sm:text-xs font-extrabold uppercase leading-tight">Art Toy + Utilitas</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan: Artwork Utama 4 Karakter -->
+      <div class="lg:col-span-5">
+        <div class="relative bg-maungOrange border-4 border-maungInk rounded-3xl p-6 shadow-brutal-lg">
+          <div class="absolute -top-4 -right-3 bg-maungYellow border-4 border-maungInk px-4 py-1 rounded-full font-display text-xs uppercase shadow-brutal-sm rotate-3">
+            Klik Karakter Untuk Ganti Pose!
+          </div>
+          <div class="bg-maungCream border-4 border-maungInk rounded-2xl p-4 flex items-center justify-center min-h-[300px]">
+            <img id="hero-artwork" src="./assets/4 karakter.png" alt="4 Karakter Jurit Maung: Ronat, Nessa, Pan, Ruben" class="w-full max-h-80 object-contain animate-float cursor-pointer" onclick="cycleHeroPose()" title="Klik untuk melihat pose individu!" />
+          </div>
+          <div class="mt-4 flex items-center justify-between gap-2">
+            <span id="hero-caption" class="font-display text-white text-sm uppercase tracking-wide">THE FULL SQUAD — JURIT MAUNG</span>
+            <button onclick="cycleHeroPose()" class="bg-maungInk text-white text-xs font-extrabold uppercase px-3 py-1.5 rounded-lg hover:bg-neutral-800">
+              Ganti Tampilan ↻
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE TICKER -->
+  <div class="bg-maungInk text-maungYellow border-y-4 border-maungInk py-3 overflow-hidden">
+    <div class="animate-marquee font-display text-sm sm:text-base uppercase tracking-wider flex items-center gap-8">
+      <span>🚇 SALDO E-MONEY KURANG PAS DI GATE STASIUN</span>
+      <span>•</span>
+      <span>😵‍💫 KEPALA PUSING ANTRE TRANSJAKARTA JAM 6 SORE</span>
+      <span>•</span>
+      <span>🌿 INHALER ADALAH PENYELAMAT KEWARASAN</span>
+      <span>•</span>
+      <span>🐯 BUKAN SEKADAR GANTUNGAN KUNCI — INI SURVIVAL KIT</span>
+      <span>•</span>
+      <span>🚇 SALDO E-MONEY KURANG PAS DI GATE STASIUN</span>
+      <span>•</span>
+      <span>😵‍💫 KEPALA PUSING ANTRE TRANSJAKARTA JAM 6 SORE</span>
+      <span>•</span>
+      <span>🌿 INHALER ADALAH PENYELAMAT KEWARASAN</span>
+      <span>•</span>
+      <span>🐯 BUKAN SEKADAR GANTUNGAN KUNCI — INI SURVIVAL KIT</span>
+    </div>
+  </div>
+
+  <!-- 2. CHARACTER UNIVERSE (INTERACTIVE SQUAD DECK) -->
+  <section id="squad" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+      <div>
+        <span class="bg-maungBlue text-white font-display text-xs uppercase px-3 py-1 border-2 border-maungInk rounded-lg">01 / CHARACTER UNIVERSE</span>
+        <h2 class="font-display text-3xl sm:text-5xl uppercase mt-3">MEET THE MAUNG SQUAD</h2>
+      </div>
+      <p class="font-bold text-sm sm:text-base max-w-md text-neutral-700">
+        Pilih karakter di bawah untuk melihat profil, level burnout, dan tombol switch pose ilustrasinya.
+      </p>
+    </div>
+
+    <!-- Tab Selector Karakter -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-8">
+      <button onclick="selectCharacter('ronat')" id="tab-ronat" class="char-tab brutal-btn bg-maungOrange text-white border-4 border-maungInk rounded-2xl p-3 sm:p-4 shadow-brutal flex items-center gap-3 text-left">
+        <img src="./assets/Ronat 1.png" alt="Ronat" class="w-12 h-12 object-contain bg-white rounded-xl border-2 border-maungInk p-1" />
+        <div>
+          <div class="font-display text-base sm:text-lg uppercase leading-none">RONAT</div>
+          <div class="text-xs font-bold opacity-90 mt-1">The Hustler</div>
+        </div>
+      </button>
+
+      <button onclick="selectCharacter('nessa')" id="tab-nessa" class="char-tab brutal-btn bg-white text-maungInk border-4 border-maungInk rounded-2xl p-3 sm:p-4 shadow-brutal flex items-center gap-3 text-left">
+        <img src="./assets/Nesa 1.png" alt="Nessa" class="w-12 h-12 object-contain bg-maungCream rounded-xl border-2 border-maungInk p-1" />
+        <div>
+          <div class="font-display text-base sm:text-lg uppercase leading-none">NESSA</div>
+          <div class="text-xs font-bold text-neutral-600 mt-1">The Influencer</div>
+        </div>
+      </button>
+
+      <button onclick="selectCharacter('pan')" id="tab-pan" class="char-tab brutal-btn bg-white text-maungInk border-4 border-maungInk rounded-2xl p-3 sm:p-4 shadow-brutal flex items-center gap-3 text-left">
+        <img src="./assets/Pan 1'.png" alt="Pan" class="w-12 h-12 object-contain bg-maungCream rounded-xl border-2 border-maungInk p-1" />
+        <div>
+          <div class="font-display text-base sm:text-lg uppercase leading-none">PAN</div>
+          <div class="text-xs font-bold text-neutral-600 mt-1">The Realist</div>
+        </div>
+      </button>
+
+      <button onclick="selectCharacter('ruben')" id="tab-ruben" class="char-tab brutal-btn bg-white text-maungInk border-4 border-maungInk rounded-2xl p-3 sm:p-4 shadow-brutal flex items-center gap-3 text-left">
+        <img src="./assets/Ruben 1.png" alt="Ruben" class="w-12 h-12 object-contain bg-maungCream rounded-xl border-2 border-maungInk p-1" />
+        <div>
+          <div class="font-display text-base sm:text-lg uppercase leading-none">RUBEN</div>
+          <div class="text-xs font-bold text-neutral-600 mt-1">The Idealist</div>
+        </div>
+      </button>
+    </div>
+
+    <!-- Detail Card Karakter Aktif -->
+    <div class="bg-white border-4 border-maungInk rounded-3xl p-6 sm:p-10 shadow-brutal-lg grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="lg:col-span-5 flex flex-col items-center">
+        <div id="char-stage" class="w-full bg-maungCream border-4 border-maungInk rounded-2xl p-6 flex items-center justify-center min-h-[280px] relative">
+          <span id="char-badge" class="absolute top-3 left-3 bg-maungOrange text-white font-display text-xs uppercase px-3 py-1 rounded-lg border-2 border-maungInk">THE HUSTLER</span>
+          <img id="char-img" src="./assets/Ronat 2.png" alt="Karakter Jurit Maung" class="h-60 w-auto object-contain transition-all duration-300" />
+        </div>
+        <button onclick="toggleCharPose()" class="mt-4 brutal-btn bg-maungYellow text-maungInk font-display text-xs uppercase px-5 py-2.5 border-4 border-maungInk rounded-xl shadow-brutal-sm">
+          🔄 Ganti Pose Karakter (Pose 1 / Pose 2)
+        </button>
+      </div>
+
+      <div class="lg:col-span-7 space-y-5">
+        <div>
+          <div id="char-species" class="text-xs font-extrabold uppercase tracking-widest text-maungBlue">Harimau Sumatera • 24 Tahun • Pejuang KRL Bekasi–Jakarta</div>
+          <h3 id="char-name" class="font-display text-3xl sm:text-5xl uppercase mt-1">RONAT</h3>
+        </div>
+
+        <blockquote id="char-quote" class="bg-maungCream border-l-8 border-maungOrange p-4 rounded-r-xl font-bold italic text-base sm:text-lg">
+          "Gaji numpang lewat bayar cicilan sama kopi susu, tapi kalau tap E-Money di gate harus tetap sat-set biar nggak diteriakin penumpang belakang."
+        </blockquote>
+
+        <p id="char-desc" class="text-neutral-700 font-medium leading-relaxed">
+          Representasi pekerja muda ambisius yang selalu mengejar kereta pertama dan pulang paling akhir. Paling butuh E-Money RFID Keychain yang tinggal tempel di tas tanpa bongkar dompet.
+        </p>
+
+        <!-- Meteran Statistik -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          <div class="bg-neutral-100 border-2 border-maungInk p-3.5 rounded-xl">
+            <div class="flex justify-between font-extrabold text-xs uppercase mb-1.5">
+              <span>Level Burnout Harian</span>
+              <span id="stat-burnout-val" class="text-maungOrange">92%</span>
+            </div>
+            <div class="w-full h-3.5 bg-white border-2 border-maungInk rounded-full overflow-hidden">
+              <div id="stat-burnout-bar" class="h-full bg-maungOrange transition-all duration-500" style="width: 92%"></div>
+            </div>
+          </div>
+
+          <div class="bg-neutral-100 border-2 border-maungInk p-3.5 rounded-xl">
+            <div class="flex justify-between font-extrabold text-xs uppercase mb-1.5">
+              <span>Kebutuhan Healing / Inhaler</span>
+              <span id="stat-healing-val" class="text-maungBlue">88%</span>
+            </div>
+            <div class="w-full h-3.5 bg-white border-2 border-maungInk rounded-full overflow-hidden">
+              <div id="stat-healing-bar" class="h-full bg-maungBlue transition-all duration-500" style="width: 88%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-2 flex flex-wrap items-center gap-3">
+          <span class="text-xs font-extrabold uppercase text-neutral-500">Survival Gear Wajib:</span>
+          <span id="char-gear" class="bg-maungInk text-maungYellow font-display text-xs uppercase px-3.5 py-1.5 rounded-lg">
+            ⚡ E-Money RFID Keychain — Edisi Ronat
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. COMIC STRIP & SOCIAL UNIVERSE -->
+  <section id="komik" class="py-16 md:py-24 bg-maungBlue border-y-4 border-maungInk text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="bg-maungYellow text-maungInk font-display text-xs uppercase px-3 py-1 border-2 border-maungInk rounded-lg">02 / STORYTELLING & CONTENT</span>
+          <h2 class="font-display text-3xl sm:text-5xl uppercase mt-3">KOMIK SATIR & FEED UNIVERSE</h2>
+        </div>
+        <a href="https://instagram.com/juritmaung" target="_blank" class="brutal-btn bg-maungOrange text-white font-display text-xs sm:text-sm uppercase px-5 py-3 border-4 border-maungInk rounded-xl shadow-brutal self-start">
+          Ikuti @juritmaung di Instagram ↗
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Komik Strip Utama -->
+        <div class="lg:col-span-6 bg-white text-maungInk border-4 border-maungInk rounded-3xl p-5 shadow-brutal-lg">
+          <div class="flex items-center justify-between mb-3">
+            <span class="bg-maungOrange text-white font-display text-xs uppercase px-3 py-1 rounded-lg border-2 border-maungInk">FEATURED COMIC STRIP</span>
+            <span class="text-xs font-extrabold uppercase text-neutral-500">#KomuterLife</span>
+          </div>
+          <div class="border-4 border-maungInk rounded-2xl overflow-hidden bg-maungCream">
+            <img src="./assets/Contoh Komik.jpg" alt="Contoh Komik Satir Jurit Maung" class="w-full max-h-[420px] object-contain mx-auto" />
+          </div>
+          <div class="mt-4">
+            <h3 class="font-display text-xl uppercase">Drama Jam Sibuk Transportasi Umum</h3>
+            <p class="text-sm font-semibold text-neutral-700 mt-1">
+              Konten komik pendek yang organik memicu diskusi dan tag teman sesama pejuang KRL, TransJakarta, dan MRT.
+            </p>
+          </div>
+        </div>
+
+        <!-- Preview Feed Instagram (Light & Dark Mode Showcase) -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="bg-maungCream text-maungInk border-4 border-maungInk rounded-3xl p-6 shadow-brutal-lg">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+              <h3 class="font-display text-xl uppercase">Instagram Editorial Grid</h3>
+              <div class="inline-flex rounded-xl border-2 border-maungInk overflow-hidden">
+                <button onclick="switchIgFeed('light')" id="btn-ig-light" class="px-3 py-1 text-xs font-extrabold uppercase bg-maungYellow text-maungInk">Light Mode</button>
+                <button onclick="switchIgFeed('dark')" id="btn-ig-dark" class="px-3 py-1 text-xs font-extrabold uppercase bg-white text-maungInk">Dark Mode</button>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+              <div class="border-4 border-maungInk rounded-2xl overflow-hidden bg-white p-2">
+                <img id="ig-feed-preview" src="./assets/Feed IG Light.jpeg" alt="Preview Feed Instagram Jurit Maung" class="w-full h-72 object-contain mx-auto rounded-xl" />
+              </div>
+              <div class="space-y-3">
+                <div class="bg-white border-2 border-maungInk p-3.5 rounded-xl">
+                  <div class="font-display text-sm uppercase text-maungOrange">Visual Storytelling</div>
+                  <p class="text-xs font-semibold text-neutral-700 mt-1">Konsistensi warna kontras tinggi membuat setiap unggahan langsung menonjol di linimasa audiens Gen-Z & Milenial.</p>
+                </div>
+                <div class="bg-white border-2 border-maungInk p-3.5 rounded-xl">
+                  <div class="font-display text-sm uppercase text-maungBlue">Siap Co-Branding</div>
+                  <p class="text-xs font-semibold text-neutral-700 mt-1">Slot kolaborasi komik bersponsor untuk kampanye komunitas transportasi, aplikasi finansial, hingga produk kesehatan.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. MERCH LAB (DUAL-UTILITY SHOWCASE + SIMULATOR) -->
+  <section id="merch-lab" class="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="bg-maungOrange text-white font-display text-xs uppercase px-3 py-1 border-2 border-maungInk rounded-lg">03 / DUAL-UTILITY MERCH LAB</span>
+      <h2 class="font-display text-3xl sm:text-5xl uppercase mt-3">ART TOY YANG BENARAN KEPAKE TIAP HARI</h2>
+      <p class="font-semibold text-neutral-700 mt-3">
+        Diproduksi dengan detail figur 3D resin/silikon berkualitas tinggi yang menyatu dengan fungsi esensial komuter harian.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- PRODUK 1: E-MONEY RFID KEYCHAIN + SIMULATOR TAP-IN -->
+      <div class="bg-white border-4 border-maungInk rounded-3xl p-6 sm:p-8 shadow-brutal-lg flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-4">
+            <span class="bg-maungBlue text-white font-display text-xs uppercase px-3 py-1 rounded-lg border-2 border-maungInk">FLAGSHIP #1</span>
+            <span class="text-xs font-extrabold uppercase text-neutral-500">13.56 MHz RFID Integrated</span>
+          </div>
+          <h3 class="font-display text-2xl sm:text-3xl uppercase">E-MONEY RFID KEYCHAIN</h3>
+          <p class="text-sm font-semibold text-neutral-700 mt-2">
+            Gantungan kunci figur 3D Jurit Maung yang tertanam chip kartu uang elektronik (e-Money / Flazz / TapCash). Cukup gantung di tas, langsung <em>tap</em> di gate KRL, MRT, atau TransJakarta!
+          </p>
+
+          <!-- Area Interaktif Simulator Tap-In -->
+          <div class="mt-6 bg-maungCream border-4 border-maungInk rounded-2xl p-5 relative overflow-hidden">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-extrabold uppercase bg-white px-2.5 py-1 rounded border-2 border-maungInk">Simulator Gate Stasiun</span>
+              <span id="gate-status" class="text-xs font-display uppercase px-3 py-1 rounded-full bg-neutral-800 text-white">SIAP TAP-IN</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+              <!-- Keychain yang bisa diklik -->
+              <div onclick="simulateTapIn()" class="cursor-pointer group text-center bg-white border-4 border-maungInk rounded-2xl p-4 hover:bg-maungYellow/30 transition-colors">
+                <img id="keychain-img" src="./assets/Keychain Holder.png" alt="E-Money Keychain Jurit Maung" class="h-44 mx-auto object-contain transition-transform group-hover:scale-105" />
+                <span class="inline-block mt-2 text-xs font-display uppercase text-maungBlue group-hover:underline">👆 Klik Keychain untuk Tap!</span>
+              </div>
+
+              <!-- Mesin Reader -->
+              <div id="rfid-reader" class="bg-neutral-900 text-white border-4 border-maungInk rounded-2xl p-5 text-center relative flex flex-col items-center justify-center min-h-[210px]">
+                <div id="nfc-wave" class="hidden absolute w-24 h-24 rounded-full border-4 border-emerald-400 nfc-ring"></div>
+                <div id="reader-screen" class="w-full bg-neutral-800 border-2 border-neutral-600 rounded-xl p-3 mb-3">
+                  <div id="reader-text" class="font-display text-sm text-maungYellow uppercase">TEMPELKAN KARTU</div>
+                  <div id="reader-balance" class="text-xs font-mono text-neutral-300 mt-1">Saldo: Rp 85.500</div>
+                </div>
+                <button onclick="simulateTapIn()" class="brutal-btn bg-maungOrange text-white font-display text-xs uppercase px-4 py-2.5 rounded-xl border-2 border-white w-full">
+                  ⚡ SIMULASI TAP-IN
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t-2 border-dashed border-neutral-300 flex items-center justify-between">
+          <span class="text-xs font-extrabold uppercase text-neutral-600">Kompatibel: E-Money, Flazz, TapCash, Brizzi</span>
+          <a href="#kemitraan" class="font-display text-xs uppercase text-maungOrange hover:underline">Pesan Batch Komunitas →</a>
+        </div>
+      </div>
+
+      <!-- PRODUK 2: INHALER HOLDER KEYCHAIN -->
+      <div class="bg-white border-4 border-maungInk rounded-3xl p-6 sm:p-8 shadow-brutal-lg flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-4">
+            <span class="bg-maungOrange text-white font-display text-xs uppercase px-3 py-1 rounded-lg border-2 border-maungInk">FLAGSHIP #2</span>
+            <span class="text-xs font-extrabold uppercase text-neutral-500">Universal Inhaler Fit</span>
+          </div>
+          <h3 class="font-display text-2xl sm:text-3xl uppercase">INHALER HOLDER KEYCHAIN</h3>
+          <p class="text-sm font-semibold text-neutral-700 mt-2">
+            Wadah pelindung inhaler aromaterapi anti-hilang dengan tutup kepala karakter Jurit Maung. Penyelamat instan saat pusing macet, mual di perjalanan, atau penat lembur.
+          </p>
+
+          <!-- Showcase Foto Asli Inhaler Holder -->
+          <div class="mt-6 bg-maungCream border-4 border-maungInk rounded-2xl p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-extrabold uppercase bg-white px-2.5 py-1 rounded border-2 border-maungInk">4 Varian Kepala Karakter</span>
+              <span id="inhaler-variant-label" class="text-xs font-display uppercase text-maungOrange">All-Squad Edition</span>
+            </div>
+
+            <div class="bg-white border-4 border-maungInk rounded-2xl p-4 flex items-center justify-center min-h-[210px]">
+              <img src="./assets/Inhaler Holder.png" alt="Inhaler Holder Jurit Maung" class="h-48 w-auto object-contain" />
+            </div>
+
+            <!-- Pemilih Varian Warna -->
+            <div class="grid grid-cols-4 gap-2 mt-4">
+              <button onclick="selectInhalerVariant('Ronat Ember Orange')" class="bg-maungOrange text-white font-extrabold text-[11px] uppercase py-2 rounded-lg border-2 border-maungInk hover:opacity-90">Ronat</button>
+              <button onclick="selectInhalerVariant('Nessa Cream Gold')" class="bg-maungYellow text-maungInk font-extrabold text-[11px] uppercase py-2 rounded-lg border-2 border-maungInk hover:opacity-90">Nessa</button>
+              <button onclick="selectInhalerVariant('Pan Midnight Violet')" class="bg-neutral-900 text-white font-extrabold text-[11px] uppercase py-2 rounded-lg border-2 border-maungInk hover:opacity-90">Pan</button>
+              <button onclick="selectInhalerVariant('Ruben Electric Blue')" class="bg-maungBlue text-white font-extrabold text-[11px] uppercase py-2 rounded-lg border-2 border-maungInk hover:opacity-90">Ruben</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t-2 border-dashed border-neutral-300 flex items-center justify-between">
+          <span class="text-xs font-extrabold uppercase text-neutral-600">Muat untuk: Hong Thai, Poy-Sian, Vicks, dll</span>
+          <a href="#kemitraan" class="font-display text-xs uppercase text-maungBlue hover:underline">Ajukan Custom Edisi →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. PARTNERSHIP & COLLABORATION HUB -->
+  <section id="kemitraan" class="py-16 md:py-24 bg-maungYellow border-t-4 border-maungInk">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl mb-12">
+        <span class="bg-maungInk text-white font-display text-xs uppercase px-3 py-1 rounded-lg">04 / PARTNERSHIP & B2B COLLABORATION</span>
+        <h2 class="font-display text-3xl sm:text-5xl uppercase mt-3">KOLABORASI TANPA RISIKO MODAL UNTUK KOMUNITAS & BRAND</h2>
+        <p class="font-bold text-neutral-800 mt-3 text-base sm:text-lg">
+          Kami menangani desain karakter, R&D produksi mandiri, hingga pengiriman. Mitra komunitas cukup berkolaborasi dalam kampanye konten dan menikmati bagi hasil transparan.
+        </p>
+      </div>
+
+      <!-- Timeline 3 Bulan + Kalkulator Bagi Hasil -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Kolom Kiri: Timeline Pilot 3 Bulan -->
+        <div class="lg:col-span-6 space-y-4">
+          <div class="bg-white border-4 border-maungInk rounded-2xl p-5 shadow-brutal">
+            <div class="flex items-center gap-3">
+              <span class="bg-maungOrange text-white font-display text-sm px-3 py-1 rounded-lg border-2 border-maungInk">BULAN 1</span>
+              <h3 class="font-display text-lg uppercase">Creative Campaign & Warm-Up</h3>
+            </div>
+            <p class="text-sm font-semibold text-neutral-700 mt-2">
+              Rilis komik strip kolaborasi edisi khusus komunitas transportasi/kampus dan polling desain karakter favorit audiens.
+            </p>
+          </div>
+
+          <div class="bg-white border-4 border-maungInk rounded-2xl p-5 shadow-brutal">
+            <div class="flex items-center gap-3">
+              <span class="bg-maungBlue text-white font-display text-sm px-3 py-1 rounded-lg border-2 border-maungInk">BULAN 2</span>
+              <h3 class="font-display text-lg uppercase">Prototyping & Pre-Order Batch 1</h3>
+            </div>
+            <p class="text-sm font-semibold text-neutral-700 mt-2">
+              Pembuatan master 3D & cetakan silikon edisi kolaborasi, diikuti pembukaan sistem Pre-Order sehingga nol risiko stok menumpuk.
+            </p>
+          </div>
+
+          <div class="bg-white border-4 border-maungInk rounded-2xl p-5 shadow-brutal">
+            <div class="flex items-center gap-3">
+              <span class="bg-maungInk text-maungYellow font-display text-sm px-3 py-1 rounded-lg border-2 border-maungInk">BULAN 3</span>
+              <h3 class="font-display text-lg uppercase">Produksi, Fulfillment & Profit Sharing</h3>
+            </div>
+            <p class="text-sm font-semibold text-neutral-700 mt-2">
+              Produksi massal, kontrol kualitas (QC), pengiriman ke pembeli, serta pencairan <strong>bagi hasil 15% – 20%</strong> langsung ke kas mitra.
+            </p>
+          </div>
+
+          <!-- Kredibilitas Tim ITB -->
+          <div class="bg-maungCream border-4 border-maungInk rounded-2xl p-5 shadow-brutal">
+            <div class="text-xs font-extrabold uppercase tracking-wider text-neutral-600 mb-3">Dikembangkan oleh Tim Lintas Disiplin:</div>
+            <div class="flex flex-wrap items-center gap-6">
+              <img src="./assets/Logo ITB.png" alt="Logo ITB" class="h-12 w-auto object-contain" />
+              <img src="./assets/Logo SBM ITB.png" alt="Logo SBM ITB" class="h-10 w-auto object-contain" />
+              <img src="./assets/Logo FSRD ITB.png" alt="Logo FSRD ITB" class="h-10 w-auto object-contain" />
+            </div>
+            <p class="text-xs font-bold text-neutral-700 mt-3">
+              Sinergi Kewirausahaan & Manajemen Rantai Pasok (SBM ITB) dengan Desain Komunikasi Visual & Kriya (FSRD ITB).
+            </p>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Kalkulator Simulasi Bagi Hasil -->
+        <div class="lg:col-span-6 bg-white border-4 border-maungInk rounded-3xl p-6 sm:p-8 shadow-brutal-lg">
+          <div class="inline-block bg-maungOrange text-white font-display text-xs uppercase px-3 py-1 rounded-lg border-2 border-maungInk mb-3">
+            SIMULATOR REVENUE SHARE MITRA
+          </div>
+          <h3 class="font-display text-2xl sm:text-3xl uppercase">HITUNG POTENSI KAS KOMUNITAS</h3>
+          <p class="text-sm font-semibold text-neutral-600 mt-1">
+            Asumsi harga bundling rata-rata Rp 85.000 / pcs (E-Money RFID / Inhaler Keychain).
+          </p>
+
+          <div class="mt-6 space-y-6">
+            <!-- Slider Jumlah Terjual -->
+            <div>
+              <div class="flex justify-between font-extrabold text-sm uppercase mb-2">
+                <span>Estimasi Penjualan Batch:</span>
+                <span id="calc-units-display" class="text-maungBlue font-display text-lg">150 PCS</span>
+              </div>
+              <input id="calc-units" type="range" min="50" max="500" step="25" value="150" oninput="updateCalculator()" class="w-full accent-maungOrange h-3 bg-maungCream rounded-lg cursor-pointer border-2 border-maungInk" />
+              <div class="flex justify-between text-xs font-bold text-neutral-500 mt-1">
+                <span>50 pcs (Mini Batch)</span>
+                <span>250 pcs</span>
+                <span>500 pcs (Viral Drop)</span>
+              </div>
+            </div>
+
+            <!-- Pilihan Skema Persentase -->
+            <div>
+              <label class="block font-extrabold text-sm uppercase mb-2">Skema Bagi Hasil Mitra:</label>
+              <div class="grid grid-cols-2 gap-3">
+                <button type="button" onclick="setShareRate(0.15)" id="rate-15" class="rate-btn bg-maungOrange text-white font-display text-sm uppercase py-3 rounded-xl border-4 border-maungInk shadow-brutal-sm">
+                  15% (Standar)
+                </button>
+                <button type="button" onclick="setShareRate(0.20)" id="rate-20" class="rate-btn bg-white text-maungInk font-display text-sm uppercase py-3 rounded-xl border-4 border-maungInk shadow-brutal-sm">
+                  20% (Eksklusif)
+                </button>
+              </div>
+            </div>
+
+            <!-- Hasil Perhitungan -->
+            <div class="bg-maungCream border-4 border-maungInk rounded-2xl p-5 space-y-3">
+              <div class="flex justify-between text-sm font-bold">
+                <span>Total Omzet Kotor Batch:</span>
+                <span id="calc-gross">Rp 12.750.000</span>
+              </div>
+              <div class="flex justify-between text-sm font-bold">
+                <span>Biaya Produksi & Modal Mitra:</span>
+                <span class="text-emerald-700 font-extrabold">Rp 0 (100% Ditanggung Jurit Maung)</span>
+              </div>
+              <div class="pt-3 border-t-2 border-maungInk flex items-center justify-between">
+                <span class="font-display text-sm sm:text-base uppercase">Estimasi Kas Mitra:</span>
+                <span id="calc-profit" class="font-display text-2xl sm:text-3xl text-maungOrange">Rp 1.912.500</span>
+              </div>
+            </div>
+
+            <a id="wa-cta-link" href="https://wa.me/6281298998530?text=Halo%20Jurit%20Maung!%20Saya%20tertarik%20diskusi%20kolaborasi%20merchandise%20%26%20kampanye%20komunitas." target="_blank" class="brutal-btn block text-center bg-maungBlue text-white font-display text-base uppercase py-4 rounded-2xl border-4 border-maungInk shadow-brutal">
+              💬 Hubungi Tim Kemitraan via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FOOTER & CONTACT -->
+  <footer class="bg-maungInk text-white pt-14 pb-10 border-t-4 border-maungInk">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b-2 border-neutral-800">
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="./assets/Logo Jurit Maung'.png" alt="Logo Jurit Maung" class="h-14 w-auto object-contain bg-white p-1.5 rounded-xl" />
+            <div>
+              <div class="font-display text-2xl uppercase">JURIT MAUNG</div>
+              <div class="text-xs font-bold text-maungYellow uppercase tracking-widest">Survival & Healing Ecosystem</div>
+            </div>
+          </div>
+          <p class="text-sm text-neutral-300 leading-relaxed max-w-md">
+            IP Creative Brand berbasis di Bandung & Jatinangor yang menghadirkan cerita komuter urban dan produk art-toy fungsional untuk menemani keseharian generasi muda Indonesia.
+          </p>
+        </div>
+
+        <div class="md:col-span-3 space-y-3">
+          <div class="font-display text-sm uppercase text-maungYellow">Navigasi</div>
+          <ul class="space-y-2 text-sm font-bold text-neutral-300">
+            <li><a href="#squad" class="hover:text-maungOrange">Karakter Squad</a></li>
+            <li><a href="#komik" class="hover:text-maungOrange">Komik & Social Feed</a></li>
+            <li><a href="#merch-lab" class="hover:text-maungOrange">E-Money & Inhaler Lab</a></li>
+            <li><a href="#kemitraan" class="hover:text-maungOrange">Skema Kolaborasi</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4 space-y-3">
+          <div class="font-display text-sm uppercase text-maungYellow">Kontak & Kemitraan</div>
+          <p class="text-sm text-neutral-300 font-semibold">
+            Narahubung Kemitraan: <strong class="text-white">Neza (0812-9899-8530)</strong>
+          </p>
+          <div class="flex flex-wrap gap-3 pt-2">
+            <a href="https://wa.me/6281298998530" target="_blank" class="bg-emerald-500 text-maungInk font-display text-xs uppercase px-4 py-2.5 rounded-xl hover:bg-emerald-400">
+              WhatsApp
+            </a>
+            <a href="https://instagram.com/juritmaung" target="_blank" class="bg-maungOrange text-white font-display text-xs uppercase px-4 py-2.5 rounded-xl hover:opacity-90">
+              Instagram @juritmaung
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-400 font-semibold gap-2">
+        <span>© 2026 Jurit Maung Creative IP — Bandung, Indonesia.</span>
+        <span>Built with SBM ITB × FSRD ITB Collaboration Spirit.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE JAVASCRIPT -->
+  <script>
+    // 1. Hero Pose Switcher
+    const heroPoses = [
+      { src: "./assets/4 karakter.png", caption: "THE FULL SQUAD — JURIT MAUNG" },
+      { src: "./assets/Ronat 1.png", caption: "RONAT — PEJUANG KRL PAGI" },
+      { src: "./assets/Nesa 1.png", caption: "NESSA — AESTHETIC SURVIVOR" },
+      { src: "./assets/Pan 1'.png", caption: "PAN — REALIS JAM LEMBUR" },
+      { src: "./assets/Ruben 1.png", caption: "RUBEN — INNER CHILD OPTIMIS" }
+    ];
+    let heroIndex = 0;
+    function cycleHeroPose() {
+      heroIndex = (heroIndex + 1) % heroPoses.length;
+      const img = document.getElementById('hero-artwork');
+      const cap = document.getElementById('hero-caption');
+      img.style.opacity = '0.2';
+      setTimeout(() => {
+        img.src = heroPoses[heroIndex].src;
+        cap.textContent = heroPoses[heroIndex].caption;
+        img.style.opacity = '1';
+      }, 150);
+    }
+
+    // 2. Character Universe Data & Switcher
+    const characters = {
+      ronat: {
+        name: "RONAT",
+        badge: "THE HUSTLER",
+        badgeColor: "bg-maungOrange text-white",
+        species: "Harimau Sumatera • 24 Tahun • Pejuang KRL Bekasi–Jakarta",
+        quote: "\"Gaji numpang lewat bayar cicilan sama kopi susu, tapi kalau tap E-Money di gate harus tetap sat-set biar nggak diteriakin penumpang belakang.\"",
+        desc: "Representasi pekerja muda ambisius yang selalu mengejar kereta pertama dan pulang paling akhir. Paling butuh E-Money RFID Keychain yang tinggal tempel di tas tanpa bongkar dompet.",
+        burnout: 92,
+        healing: 88,
+        gear: "⚡ E-Money RFID Keychain — Edisi Ronat",
+        poses: ["./assets/Ronat 2.png", "./assets/Ronat 1.png"]
+      },
+      nessa: {
+        name: "NESSA",
+        badge: "THE INFLUENCER",
+        badgeColor: "bg-maungYellow text-maungInk",
+        species: "Cheetah Urban • 22 Tahun • Mahasiswi & Content Creator",
+        quote: "\"Outfit udah kece ke kampus dan kafe, masa gantungan tas sama inhaler bentuknya gitu-gitu aja? Harus tetep fotogenik walau tugas numpuk!\"",
+        desc: "Selalu update tren visual dan mengutamakan estetika dalam setiap barang bawaan harian. Mencari merchandise lokal yang ekspresif sekaligus fungsional.",
+        burnout: 78,
+        healing: 85,
+        gear: "🌿 Inhaler Holder Keychain — Edisi Nessa",
+        poses: ["./assets/Nesa 2.png", "./assets/Nesa 1.png"]
+      },
+      pan: {
+        name: "PAN",
+        badge: "THE REALIST",
+        badgeColor: "bg-maungInk text-white",
+        species: "Macan Kumbang • 26 Tahun • Analis Kantoran & Overthinker",
+        quote: "\"Katanya kerja keras bikin kaya, nyatanya cuma bikin punggung encok sama butuh inhaler tiap kali rapat mendadak jam 5 sore.\"",
+        desc: "Tampak tenang dan sinis di luar, namun diam-diam paling peduli pada teman-temannya. Inhaler aromaterapi adalah penyelamat utamanya menghadapi macet dan rapat panjang.",
+        burnout: 95,
+        healing: 96,
+        gear: "🌿 Inhaler Holder Keychain — Edisi Pan",
+        poses: ["./assets/Pan 2.png", "./assets/Pan 1'.png"]
+      },
+      ruben: {
+        name: "RUBEN",
+        badge: "THE IDEALIST",
+        badgeColor: "bg-maungBlue text-white",
+        species: "Kucing Biru Kecil • Inner Child & Pencari Kebahagiaan Sederhana",
+        quote: "\"Dapet kursi kosong di kereta pas jam pulang aja rasanya udah kayak menang undian berhadiah!\"",
+        desc: "Simbol sisi tulus dalam diri setiap orang dewasa yang masih mencoba menikmati hal-hal kecil di tengah kerasnya ritme kota.",
+        burnout: 64,
+        healing: 90,
+        gear: "⚡ Bundling Lengkap E-Money + Inhaler Ruben",
+        poses: ["./assets/Ruben 2.png", "./assets/Ruben 1.png"]
+      }
+    };
+
+    let currentCharKey = 'ronat';
+    let currentPoseIdx = 0;
+
+    function selectCharacter(key) {
+      currentCharKey = key;
+      currentPoseIdx = 0;
+      const c = characters[key];
+
+      // Update Tab Active Style
+      document.querySelectorAll('.char-tab').forEach(btn => {
+        btn.classList.remove('bg-maungOrange', 'text-white');
+        btn.classList.add('bg-white', 'text-maungInk');
+      });
+      const activeTab = document.getElementById('tab-' + key);
+      activeTab.classList.remove('bg-white', 'text-maungInk');
+      activeTab.classList.add('bg-maungOrange', 'text-white');
+
+      // Update Content
+      document.getElementById('char-name').textContent = c.name;
+      const badge = document.getElementById('char-badge');
+      badge.textContent = c.badge;
+      badge.className = `absolute top-3 left-3 font-display text-xs uppercase px-3 py-1 rounded-lg border-2 border-maungInk ${c.badgeColor}`;
+      document.getElementById('char-species').textContent = c.species;
+      document.getElementById('char-quote').textContent = c.quote;
+      document.getElementById('char-desc').textContent = c.desc;
+      document.getElementById('char-gear').textContent = c.gear;
+      document.getElementById('char-img').src = c.poses[0];
+
+      document.getElementById('stat-burnout-val').textContent = c.burnout + '%';
+      document.getElementById('stat-burnout-bar').style.width = c.burnout + '%';
+      document.getElementById('stat-healing-val').textContent = c.healing + '%';
+      document.getElementById('stat-healing-bar').style.width = c.healing + '%';
+    }
+
+    function toggleCharPose() {
+      const c = characters[currentCharKey];
+      currentPoseIdx = (currentPoseIdx + 1) % c.poses.length;
+      document.getElementById('char-img').src = c.poses[currentPoseIdx];
+    }
+
+    // 3. Instagram Feed Light / Dark Switcher
+    function switchIgFeed(mode) {
+      const img = document.getElementById('ig-feed-preview');
+      const btnLight = document.getElementById('btn-ig-light');
+      const btnDark = document.getElementById('btn-ig-dark');
+      if (mode === 'light') {
+        img.src = "./assets/Feed IG Light.jpeg";
+        btnLight.className = "px-3 py-1 text-xs font-extrabold uppercase bg-maungYellow text-maungInk";
+        btnDark.className = "px-3 py-1 text-xs font-extrabold uppercase bg-white text-maungInk";
+      } else {
+        img.src = "./assets/Feed IG Dark.jpeg";
+        btnDark.className = "px-3 py-1 text-xs font-extrabold uppercase bg-maungInk text-maungYellow";
+        btnLight.className = "px-3 py-1 text-xs font-extrabold uppercase bg-white text-maungInk";
+      }
+    }
+
+    // 4. Simulator Tap-In E-Money RFID + Web Audio Beep
+    let currentBalance = 85500;
+    function playBeepSound() {
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(1850, ctx.currentTime);
+        gain.gain.setValueAtTime(0.15, ctx.currentTime);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.14);
+      } catch (e) {}
+    }
+
+    function simulateTapIn() {
+      playBeepSound();
+      const wave = document.getElementById('nfc-wave');
+      const status = document.getElementById('gate-status');
+      const rText = document.getElementById('reader-text');
+      const rBal = document.getElementById('reader-balance');
+      const kImg = document.getElementById('keychain-img');
+
+      wave.classList.remove('hidden');
+      kImg.style.transform = 'translateX(24px) rotate(8deg) scale(1.08)';
+      status.textContent = 'GATE TERBUKA ✓';
+      status.className = 'text-xs font-display uppercase px-3 py-1 rounded-full bg-emerald-500 text-maungInk';
+      rText.textContent = 'AKSES BERHASIL!';
+      rText.className = 'font-display text-sm text-emerald-400 uppercase';
+
+      currentBalance = currentBalance >= 5000 ? currentBalance - 3500 : 85500;
+      rBal.textContent = 'Tarif Rp 3.500 | Sisa: Rp ' + currentBalance.toLocaleString('id-ID');
+
+      setTimeout(() => {
+        wave.classList.add('hidden');
+        kImg.style.transform = '';
+        status.textContent = 'SIAP TAP-IN';
+        status.className = 'text-xs font-display uppercase px-3 py-1 rounded-full bg-neutral-800 text-white';
+        rText.textContent = 'TEMPELKAN KARTU';
+        rText.className = 'font-display text-sm text-maungYellow uppercase';
+      }, 1800);
+    }
+
+    // 5. Inhaler Variant Label Selector
+    function selectInhalerVariant(label) {
+      document.getElementById('inhaler-variant-label').textContent = label;
+    }
+
+    // 6. Partnership Profit Sharing Calculator
+    let shareRate = 0.15;
+    function setShareRate(rate) {
+      shareRate = rate;
+      const b15 = document.getElementById('rate-15');
+      const b20 = document.getElementById('rate-20');
+      if (rate === 0.15) {
+        b15.className = 'rate-btn bg-maungOrange text-white font-display text-sm uppercase py-3 rounded-xl border-4 border-maungInk shadow-brutal-sm';
+        b20.className = 'rate-btn bg-white text-maungInk font-display text-sm uppercase py-3 rounded-xl border-4 border-maungInk shadow-brutal-sm';
+      } else {
+        b20.className = 'rate-btn bg-maungOrange text-white font-display text-sm uppercase py-3 rounded-xl border-4 border-maungInk shadow-brutal-sm';
+        b15.className = 'rate-btn bg-white text-maungInk font-display text-sm uppercase py-3 rounded-xl border-4 border-maungInk shadow-brutal-sm';
+      }
+      updateCalculator();
+    }
+
+    function updateCalculator() {
+      const units = parseInt(document.getElementById('calc-units').value, 10);
+      const pricePerUnit = 85000;
+      const gross = units * pricePerUnit;
+      const profit = Math.round(gross * shareRate);
+
+      document.getElementById('calc-units-display').textContent = units + ' PCS';
+      document.getElementById('calc-gross').textContent = 'Rp ' + gross.toLocaleString('id-ID');
+      document.getElementById('calc-profit').textContent = 'Rp ' + profit.toLocaleString('id-ID');
+
+      const waText = encodeURIComponent(`Halo Jurit Maung! Saya tertarik diskusi kolaborasi batch ${units} pcs (skema bagi hasil ${Math.round(shareRate * 100)}%).`);
+      document.getElementById('wa-cta-link').href = `https://wa.me/6281298998530?text=${waText}`;
+    }
+  </script>
+</body>
+</html>
